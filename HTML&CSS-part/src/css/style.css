@@ -93,28 +93,42 @@ a {
     background-image: url(../img/insta-img.png);
 }
 
-.header .main-menu {
-    background-color: #fff;
+.main-menu {
+    background-image: url(../img/head-menu-bg.png);
     position: absolute;
-    bottom: 0;
+    bottom: -8px;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 108px;
 }
 
-.header .main-menu .menu-list {
-    font-family: 'Open Sans';
-    font-size: 26px;
-    font-weight: 600;
-    /*semibold*/
-    text-transform: uppercase;
-    color: #2e2e2e;
+.main-menu .menu-list {
     text-align: center;
 }
 
-.header .main-menu .menu-list .menu-item {
+.main-menu .menu-list .menu-item {
+    width: auto;
+    height: 100px;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 100px;
     display: inline-block;
-    margin: 40px 16px;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+
+.main-menu .menu-list .menu-item a {
+    text-align: center;
+    color: #2e2e2e;
+}
+
+.main-menu .menu-list .menu-item a:hover {
+    color: black;
+    border-radius: 25px;
+    background-color: rgba(40, 103, 130, 0.2);
+    box-shadow: inset 1px 0px 20px 10px white;
 }
 
 
@@ -122,7 +136,16 @@ a {
 -----------------------------------------------------------------------------*/
 
 .content {
-    padding: 0 0 74px;
+    padding: 100px 0 74px;
+}
+
+.content h1 {
+    margin: 100px 0;
+    height: 200px; 
+    vertical-align: middle;
+    text-align: center;
+    font-size: 73px;
+    font-weight: 300;
 }
 
 

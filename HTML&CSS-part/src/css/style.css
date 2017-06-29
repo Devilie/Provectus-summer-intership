@@ -1,0 +1,138 @@
+/* Fonts
+-----------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'), url('font/Open-Sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova'), local('ProximaNova'), url('font/ProximaNova.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* basic
+-----------------------------------------------------------------------------*/
+
+html {
+    height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font: 12px/18px 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #fbfafa;
+}
+
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+.header {
+    height: 580px;
+    background-image: url(../img/header_imgs.png);
+    position: relative;
+    -webkit-box-shadow: inset 0px 150px 50px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0px 150px 50px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 150px 60px 0px rgba(0, 0, 0, 0.45);
+}
+
+.header .insta-ref {
+    float: right;
+    margin: 10px 20px;
+}
+
+.header .insta-ref a {
+    font-family: 'Proxima Nova';
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.header .insta-ref a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-left: -27px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/insta-img.png);
+}
+
+.header .main-menu {
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+}
+
+.header .main-menu .menu-list {
+    font-family: 'Open Sans';
+    font-size: 26px;
+    font-weight: 600;
+    /*semibold*/
+    text-transform: uppercase;
+    color: #2e2e2e;
+    text-align: center;
+}
+
+.header .main-menu .menu-list .menu-item {
+    display: inline-block;
+    margin: 40px 16px;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+
+.content {
+    padding: 0 0 74px;
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+    width: 1440px;
+    margin: -74px auto 0;
+    height: 74px;
+    background: #efefef;
+    position: relative;
+}

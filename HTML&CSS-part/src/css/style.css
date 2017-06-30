@@ -138,7 +138,7 @@ a {
     display: inline-block;
     font-family: 'Open Sans-Semibold', sans-serif;
     text-transform: uppercase;
-    margin-right: 65px;
+    margin-left: 65px;
 }
 
 .main-menu .menu-list .menu-item a {
@@ -198,13 +198,15 @@ a {
     border-radius: 5px;
     background-color: #286782;
     font-family: 'Open Sans-Semibold', sans-serif;
+    box-shadow: unset;
 }
 
-.content .article .about-hotdog  {
+.content .article .about-hotdog {
     height: 575px;
     vertical-align: top;
 }
-.contacts .article .about-hotdog:nth-child(2) p{
+
+.contacts .article .about-hotdog p:nth-child(2) {
     float: right;
 }
 
@@ -226,6 +228,28 @@ a {
     font-family: 'Open Sans-Bold', sans-serif;
     display: block;
     font-size: 24px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.content .article .about-hotdog p span::before {
+    content: "";
+    position: absolute;
+    left: -53px;
+    top: 13px;
+    width: 33px;
+    height: 4px;
+    background-image: url(../img/about-headline-rect.png);
+}
+
+.content .article .about-hotdog img {
+    display: inline-block;
+    width: auto;
+    height: 575px;
+}
+
+.content .article .about-hotdog.vegan p {
+    float: right;
 }
 
 
@@ -239,16 +263,20 @@ a {
     background: #efefef;
     position: relative;
     font-size: 14px;
+    letter-spacing: 1px;
+    color: #555559;
 }
+
 .footer div {
     display: inline-block;
-    margin: 32px 20px;
+    margin: 30px 20px auto;
     box-sizing: border-box;
 }
+
 .footer .trade-mark {
     float: left;
 }
+
 .footer .contacts {
     float: right;
-    
 }

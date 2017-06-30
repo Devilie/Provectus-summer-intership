@@ -9,6 +9,27 @@
 }
 
 @font-face {
+    font-family: 'Open Sans-Semibold';
+    src: local('Open Sans-Semibold'), local('OpenSans-Semibold'), url('font/OpenSans-Semibold.ttf') format('truetype'), url('font/OpenSans-Semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans-Light';
+    src: local('Open Sans-Light'), local('OpenSans-Light'), url('font/OpenSans-Light.ttf') format('truetype'), url('font/OpenSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans-Bold';
+    src: local('Open Sans-Bold'), local('OpenSans-Bold'), url('font/OpenSans-Bold.ttf') format('truetype'), url('font/OpenSans-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Proxima Nova';
     src: local('Proxima Nova'), local('ProximaNova'), url('font/ProximaNova.ttf') format('truetype');
     font-weight: normal;
@@ -39,7 +60,7 @@ summary {
 }
 
 body {
-    font: 12px/18px 'Open Sans', sans-serif;
+    font: 18px 'Open Sans', sans-serif;
     width: 100%;
     height: 100%;
     background-color: #fbfafa;
@@ -78,7 +99,7 @@ a {
 .header .insta-ref a {
     font-family: 'Proxima Nova';
     position: relative;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     color: #fff;
 }
@@ -87,6 +108,7 @@ a {
     content: "";
     position: absolute;
     left: 0;
+    top: 0;
     margin-left: -27px;
     width: 20px;
     height: 20px;
@@ -104,19 +126,19 @@ a {
 
 .main-menu .menu-list {
     text-align: center;
+    margin: 0 auto;
 }
 
 .main-menu .menu-list .menu-item {
     width: auto;
     height: 100px;
-    font-size: 26px;
-    font-weight: 600;
+    font-size: 20px;
     letter-spacing: 2px;
     line-height: 100px;
     display: inline-block;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans-Semibold', sans-serif;
     text-transform: uppercase;
-    margin-right: 40px;
+    margin-right: 65px;
 }
 
 .main-menu .menu-list .menu-item a {
@@ -136,16 +158,74 @@ a {
 -----------------------------------------------------------------------------*/
 
 .content {
-    padding: 100px 0 74px;
+    padding: 0 0 74px;
 }
 
-.content h1 {
-    margin: 100px 0;
-    height: 200px; 
-    vertical-align: middle;
+.content .article {
     text-align: center;
-    font-size: 73px;
-    font-weight: 300;
+}
+
+.content .article h1 {
+    font-family: 'Open Sans-Light', sans-serif;
+    width: 920px;
+    color: #555559;
+    margin: 240px auto 90px;
+    line-height: 100px;
+    font-size: 55px;
+    position: relative;
+}
+
+.content .article h1::before {
+    content: "";
+    width: 92px;
+    height: 92px;
+    position: absolute;
+    margin: 0 auto;
+    top: -138px;
+    left: 0;
+    right: 0;
+    background-image: url(../img/hotdog.png);
+}
+
+.content .article .intro-btn {
+    margin: 6px auto 174px;
+    padding: 0;
+    height: 64px;
+    width: 310px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #286782;
+    font-family: 'Open Sans-Semibold', sans-serif;
+}
+
+.content .article .about-hotdog  {
+    height: 575px;
+    vertical-align: top;
+}
+.contacts .article .about-hotdog:nth-child(2) p{
+    float: right;
+}
+
+.content .article .about-hotdog p {
+    display: inline-block;
+    width: 50%;
+    height: 575px;
+    float: left;
+    vertical-align: top;
+    padding: 223px 140px 238px;
+    text-align: left;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: 'Open Sans-Light', sans-serif;
+    color: #555559;
+}
+
+.content .article .about-hotdog p span {
+    font-family: 'Open Sans-Bold', sans-serif;
+    display: block;
+    font-size: 24px;
 }
 
 
@@ -158,4 +238,17 @@ a {
     height: 74px;
     background: #efefef;
     position: relative;
+    font-size: 14px;
+}
+.footer div {
+    display: inline-block;
+    margin: 32px 20px;
+    box-sizing: border-box;
+}
+.footer .trade-mark {
+    float: left;
+}
+.footer .contacts {
+    float: right;
+    
 }

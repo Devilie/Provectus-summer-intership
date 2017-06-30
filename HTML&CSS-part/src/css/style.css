@@ -199,6 +199,7 @@ a {
     background-color: #286782;
     font-family: 'Open Sans-Semibold', sans-serif;
     box-shadow: unset;
+    cursor: pointer;
 }
 
 .content .article .about-hotdog {
@@ -279,4 +280,7 @@ a {
 
 .footer .contacts {
     float: right;
+}
+.footer .contacts a {
+    color: #555559;
 }

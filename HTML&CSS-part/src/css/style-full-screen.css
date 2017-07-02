@@ -1,3 +1,4 @@
+/*just for sample*/
 /* Fonts
 -----------------------------------------------------------------------------*/
 
@@ -83,12 +84,12 @@ a {
 -----------------------------------------------------------------------------*/
 
 .header {
+    height: 580px;
+    background-image: url(../img/header_imgs.png);
     position: relative;
-    height: 330px;
-    -webkit-box-shadow: inset 0px 74px 30px 0px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: inset 0px 74px 30px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: inset 0px 74px 30px 0px rgba(0, 0, 0, 0.45);
-    background-image: url(../img/header_imgs-min.png);
+    -webkit-box-shadow: inset 0px 150px 50px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0px 150px 50px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 150px 60px 0px rgba(0, 0, 0, 0.45);
 }
 
 .header .insta-ref {
@@ -127,25 +128,23 @@ a {
 .main-menu .menu-list {
     text-align: center;
     margin: 0 auto;
-    columns: 2;
 }
 
 .main-menu .menu-list .menu-item {
     width: auto;
-    height: 50px;
-    font-size: 16px;
-    margin-left: 20px;
-    line-height: 40px;
+    height: 100px;
+    font-size: 20px;
     letter-spacing: 2px;
+    line-height: 100px;
     display: inline-block;
     font-family: 'Open Sans-Semibold', sans-serif;
     text-transform: uppercase;
+    margin-left: 65px;
 }
 
 .main-menu .menu-list .menu-item a {
     text-align: center;
     color: #2e2e2e;
-    vertical-align: sub;
 }
 
 .main-menu .menu-list .menu-item a:hover {
@@ -168,85 +167,93 @@ a {
 }
 
 .content .article h1 {
+    font-family: 'Open Sans-Light', sans-serif;
     max-width: 920px;
     color: #555559;
+    margin: 240px auto 90px;
+    line-height: 100px;
+    font-size: 55px;
     position: relative;
-    font-size: 24px;
-    line-height: 40px;
-    margin: 200px auto 80px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .content .article h1::before {
     content: "";
+    width: 92px;
+    height: 92px;
+    position: absolute;
+    margin: 0 auto;
+    top: -138px;
     left: 0;
     right: 0;
-    top: -100px;
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
-    position: absolute;
-    background-image: url(../img/hotdog-min.png);
+    background-image: url(../img/hotdog.png);
 }
 
 .content .article .intro-btn {
+    margin: 6px auto 174px;
     padding: 0;
-    height: 50px;
-    width: 200px;
+    height: 64px;
+    width: 310px;
     border: none;
     color: white;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: unset;
+    font-size: 20px;
     border-radius: 5px;
-    margin: 6px auto 100px;
     background-color: #286782;
     font-family: 'Open Sans-Semibold', sans-serif;
+    box-shadow: unset;
+    cursor: pointer;
 }
 
 .content .article .about-hotdog {
-    height: auto;
-    display: block;
-    overflow: hidden;
+    height: 575px;
+    vertical-align: top;
+}
+
+.contacts .article .about-hotdog p:nth-child(2) {
+    float: right;
 }
 
 .content .article .about-hotdog p {
-    width: 100%;
-    height: 256px;
+    width: 50%;
+    height: 575px;
     float: left;
-    display: block;
-    font-size: 16px;
+    vertical-align: top;
+    padding: 223px 140px 238px;
     text-align: left;
-    color: #555559;
-    padding: 40px 20px;
     box-sizing: border-box;
     background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans-Light', sans-serif;
+    color: #555559;
 }
 
 .content .article .about-hotdog p span {
     font-family: 'Open Sans-Bold', sans-serif;
     display: block;
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 40px;
     position: relative;
 }
 
 .content .article .about-hotdog p span::before {
     content: "";
     position: absolute;
-    left: -50px;
-    top: 12px;
+    left: -53px;
+    top: 13px;
     width: 33px;
     height: 4px;
-    visibility: hidden;
     background-image: url(../img/about-headline-rect.png);
 }
 
-.content .article .about-hotdog  img {
-    display: block;
+.content .article .about-hotdog .hotdog-img-cont {
+    display: inline-block;
+    width: 50%;
+    height: 575px;
+    overflow: hidden;
+}
+
+.content .article .about-hotdog .hotdog-img-cont img {
     width: 100%;
     height: auto;
+    vertical-align: baseline;
 }
 
 .content .article .about-hotdog.vegan p {
@@ -263,14 +270,14 @@ a {
     height: 74px;
     background: #efefef;
     position: relative;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
     color: #555559;
 }
 
 .footer div {
     display: inline-block;
-    margin: 10px 20px auto;
+    margin: 30px 20px auto;
     box-sizing: border-box;
 }
 
@@ -280,8 +287,6 @@ a {
 
 .footer .contacts {
     float: right;
-    width: 290px;
-    margin-right: 0;
 }
 
 .footer .contacts a {

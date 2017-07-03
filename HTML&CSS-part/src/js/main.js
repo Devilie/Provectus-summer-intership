@@ -1,32 +1,26 @@
 'use strict';
-/*JS part
-Допустим есть массив строк. Все строки содержар одинаковые символы, кроме одной строки.
-Надо написать функцию, которая будет принимать этот массив и находить это слово.
-Строки могут содержать пробелы, их нужно игнорировать, только non-spaces символы имеют значение. Гарантировано, что массив будет содержать больше 3 строк
-Примр:
-findUniq([ 'abc', 'acb', 'bac', 'test', 'bca', 'cab', 'cba' ]) === 'test'
-*/
 
-findUniq(['abc', 'acb', 'bac', 'test', 'bca', 'cab', 'cba']);
-findUniq([]);
+console.log("Uniq item is: " + findUniq(['abc', 'acb ', 'ba c', 'test', 'bca', 'cab', 'cba']));
+console.log("Test no array - " + findUniq([]));
 
 function findUniq(arr) {
-    var uniqItem;
-    if (!uniqItem) {
-        uniqItem = arr[0];
-    }
     if (arr.length) {
-
-        arr.sort((a, b) => {
+        var tested = arr,
+            uniqItem;
+        tested = tested.toString().replace(/\s+/g, '').split(',');
+        if (!uniqItem) {
+            uniqItem = tested[0];
+        }
+        uniqItem = tested.sort(function (a, b) {
                 return a.length - b.length;
             })
-            .filter((elem) => {});
-        console.log(arr);
-
-
+            .filter(function (elem, index, tested) {
+                if (elem.length !== tested[1].length) {
+                    return true;
+                }
+            });
+        return uniqItem;
     } else {
-        console.log("no items in array!");
+        return "No items in array!";
     }
-    console.log(uniqItem);
-    return uniqItem;
 }

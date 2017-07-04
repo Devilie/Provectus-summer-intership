@@ -9,6 +9,7 @@
     <li>быть адаптивным</li>
   </ol>
 </p>
+<p>done - Provectus-summer-intership/HTML&CSS-part/src/</p>
 
 <h3>JS part</h3>
 <p>Допустим есть массив строк. Все строки содержар одинаковые символы, кроме одной строки.<br/>
@@ -17,3 +18,4 @@
   Примр:<br/>
   findUniq([ 'abc', 'acb', 'bac', 'test', 'bca', 'cab', 'cba' ]) === 'test'
 </p>
+<p>done - Provectus-summer-intership/HTML&CSS-part/src/js/</p>

@@ -212,7 +212,7 @@ a {
     overflow: hidden;
 }
 
-.content .article .about-hotdog p {
+.content .article .about-hotdog .about-cont {
     width: 100%;
     height: 256px;
     float: left;
@@ -226,16 +226,16 @@ a {
     font-family: 'Open Sans', sans-serif;
 }
 
-.content .article .about-hotdog p span {
+.content .article .about-hotdog .about-cont h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    display: block;
+    display: inline-block;
     font-size: 18px;
     margin-bottom: 20px;
     position: relative;
 }
 
-.content .article .about-hotdog p span::before {
+.content .article .about-hotdog .about-cont h2::before {
     content: "";
     position: absolute;
     left: -50px;
@@ -246,14 +246,10 @@ a {
     background-image: url(../img/about-headline-rect.png);
 }
 
-.content .article .about-hotdog  img {
+.content .article .about-hotdog img {
     display: block;
     width: 100%;
     height: auto;
-}
-
-.content .article .about-hotdog.vegan p {
-    float: right;
 }
 
 
@@ -286,17 +282,21 @@ a {
     width: 290px;
     margin-right: 0;
 }
+
 .footer .contacts p {
     display: inline-block;
 }
-.footer .contacts p::after{
+
+.footer .contacts p::after {
     content: "|";
     margin-left: 10px;
 }
-.footer .contacts .phone-num::after{
+
+.footer .contacts .phone-num::after {
     content: "|";
     margin: 0 10px;
 }
+
 .footer .contacts a {
     color: #555559;
 }

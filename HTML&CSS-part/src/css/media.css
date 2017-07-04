@@ -1,5 +1,5 @@
 @media only screen and (min-width: 380px) {
-    .content .article .about-hotdog p {
+    .content .article .about-hotdog .about-cont {
         padding: 50px 30px;
     }
     .main-menu .menu-list .menu-item {
@@ -21,21 +21,21 @@
         font-weight: 300;
         font-family: 'Open Sans', sans-serif;
     }
-    .content .article .about-hotdog p {
+    .content .article .about-hotdog .about-cont {
         height: 300px;
         padding: 70px 40px;
         font-size: 20px;
     }
-    .content .article .about-hotdog p span {
+    .content .article .about-hotdog .about-cont h2 {
         font-size: 22px;
     }
 }
 
 @media only screen and (min-width: 570px) {
-    .content .article .about-hotdog p span::before {
+    .content .article .about-hotdog .about-cont h2::before {
         visibility: visible;
     }
-    .content .article .about-hotdog p {
+    .content .article .about-hotdog .about-cont {
         height: 320px;
         padding-left: 100px;
     }
@@ -67,13 +67,13 @@
     .content .article h1 {
         line-height: 50px;
     }
-    .content .article .about-hotdog p {
+    .content .article .about-hotdog .about-cont {
         height: 380px;
         padding-top: 100px;
         padding-left: 220px;
         padding-right: 100px;
     }
-    .content .article .about-hotdog p span {
+    .content .article .about-hotdog .about-cont h2 {
         margin-bottom: 30px;
     }
     .footer div {
@@ -99,10 +99,10 @@
     .content .article .about-hotdog {
         height: 322px;
     }
-    .contacts .article .about-hotdog p:nth-child(2) {
+    .content .article .about-hotdog.vegan .about-cont {
         float: right;
     }
-    .content .article .about-hotdog p {
+    .content .article .about-hotdog .about-cont {
         width: 50%;
         height: 100%;
         padding: 50px 40px 20px 100px;
@@ -138,7 +138,7 @@
     .content .article .about-hotdog {
         height: 430px;
     }
-    .content .article .about-hotdog p {
+    .content .article .about-hotdog .about-cont {
         padding: 120px 110px 100px 130px;
     }
     .footer {
@@ -162,7 +162,7 @@
     .content .article .about-hotdog {
         height: 510px;
     }
-    .content .article .about-hotdog p {
+    .content .article .about-hotdog .about-cont {
         padding-top: 160px;
     }
 }
@@ -181,16 +181,16 @@
     .content .article .about-hotdog {
         height: 575px;
     }
-    .content .article .about-hotdog p {
+    .content .article .about-hotdog .about-cont {
         padding: 223px 140px 238px;
         font-weight: 300;
         font-family: 'Open Sans', sans-serif;
     }
-    .content .article .about-hotdog p span {
+    .content .article .about-hotdog .about-cont h2 {
         font-size: 24px;
         margin-bottom: 40px;
     }
-    .content .article .about-hotdog p span::before {
+    .content .article .about-hotdog .about-cont h2::before {
         left: -53px;
         top: 13px;
     }

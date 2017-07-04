@@ -18,7 +18,8 @@
     }
     .content .article h1 {
         font-size: 30px;
-        font-family: 'Open Sans-Light', sans-serif;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
     }
     .content .article .about-hotdog p {
         height: 300px;
@@ -152,6 +153,9 @@
         width: auto;
         margin-right: 20px;
     }
+    .footer .contacts p::after {
+        margin: 0 10px;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -179,7 +183,8 @@
     }
     .content .article .about-hotdog p {
         padding: 223px 140px 238px;
-        font-family: 'Open Sans-Light', sans-serif;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
     }
     .content .article .about-hotdog p span {
         font-size: 24px;

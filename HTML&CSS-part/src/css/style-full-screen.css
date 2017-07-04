@@ -1,7 +1,6 @@
 /*just for sample*/
 /* Fonts
 -----------------------------------------------------------------------------*/
-
 @font-face {
     font-family: 'Open Sans';
     src: local('Open Sans'), local('OpenSans'), url('font/Open-Sans.ttf') format('truetype');
@@ -10,23 +9,23 @@
 }
 
 @font-face {
-    font-family: 'Open Sans-Semibold';
-    src: local('Open Sans-Semibold'), local('OpenSans-Semibold'), url('font/OpenSans-Semibold.ttf') format('truetype'), url('font/OpenSans-Semibold.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'), url('font/OpenSans-Semibold.ttf') format('truetype'), url('font/OpenSans-Semibold.woff') format('woff');
+    font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Open Sans-Light';
-    src: local('Open Sans-Light'), local('OpenSans-Light'), url('font/OpenSans-Light.ttf') format('truetype'), url('font/OpenSans-Light.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'), url('font/OpenSans-Light.ttf') format('truetype'), url('font/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Open Sans-Bold';
-    src: local('Open Sans-Bold'), local('OpenSans-Bold'), url('font/OpenSans-Bold.ttf') format('truetype'), url('font/OpenSans-Bold.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'), url('font/OpenSans-Bold.ttf') format('truetype'), url('font/OpenSans-Bold.woff') format('woff');
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -36,6 +35,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 
 
 /* basic
@@ -137,7 +137,8 @@ a {
     letter-spacing: 2px;
     line-height: 100px;
     display: inline-block;
-    font-family: 'Open Sans-Semibold', sans-serif;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     margin-left: 65px;
 }
@@ -167,7 +168,8 @@ a {
 }
 
 .content .article h1 {
-    font-family: 'Open Sans-Light', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     max-width: 920px;
     color: #555559;
     margin: 240px auto 90px;
@@ -198,7 +200,8 @@ a {
     font-size: 20px;
     border-radius: 5px;
     background-color: #286782;
-    font-family: 'Open Sans-Semibold', sans-serif;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
     box-shadow: none;
     cursor: pointer;
 }
@@ -221,12 +224,14 @@ a {
     text-align: left;
     box-sizing: border-box;
     background-color: #fff;
-    font-family: 'Open Sans-Light', sans-serif;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
     color: #555559;
 }
 
 .content .article .about-hotdog p span {
-    font-family: 'Open Sans-Bold', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     display: block;
     font-size: 24px;
     margin-bottom: 40px;

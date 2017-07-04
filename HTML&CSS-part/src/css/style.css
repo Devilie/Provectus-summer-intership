@@ -9,23 +9,23 @@
 }
 
 @font-face {
-    font-family: 'Open Sans-Semibold';
-    src: local('Open Sans-Semibold'), local('OpenSans-Semibold'), url('font/OpenSans-Semibold.ttf') format('truetype'), url('font/OpenSans-Semibold.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'), url('font/OpenSans-Semibold.ttf') format('truetype'), url('font/OpenSans-Semibold.woff') format('woff');
+    font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Open Sans-Light';
-    src: local('Open Sans-Light'), local('OpenSans-Light'), url('font/OpenSans-Light.ttf') format('truetype'), url('font/OpenSans-Light.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'), url('font/OpenSans-Light.ttf') format('truetype'), url('font/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Open Sans-Bold';
-    src: local('Open Sans-Bold'), local('OpenSans-Bold'), url('font/OpenSans-Bold.ttf') format('truetype'), url('font/OpenSans-Bold.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans'), url('font/OpenSans-Bold.ttf') format('truetype'), url('font/OpenSans-Bold.woff') format('woff');
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -138,7 +138,8 @@ a {
     line-height: 40px;
     letter-spacing: 2px;
     display: inline-block;
-    font-family: 'Open Sans-Semibold', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -201,7 +202,8 @@ a {
     border-radius: 5px;
     margin: 6px auto 100px;
     background-color: #286782;
-    font-family: 'Open Sans-Semibold', sans-serif;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .content .article .about-hotdog {
@@ -225,7 +227,8 @@ a {
 }
 
 .content .article .about-hotdog p span {
-    font-family: 'Open Sans-Bold', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     display: block;
     font-size: 18px;
     margin-bottom: 20px;
@@ -283,7 +286,17 @@ a {
     width: 290px;
     margin-right: 0;
 }
-
+.footer .contacts p {
+    display: inline-block;
+}
+.footer .contacts p::after{
+    content: "|";
+    margin-left: 10px;
+}
+.footer .contacts .phone-num::after{
+    content: "|";
+    margin: 0 10px;
+}
 .footer .contacts a {
     color: #555559;
 }
